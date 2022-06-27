@@ -1,5 +1,5 @@
 <?php
 
-function salut($prenom) {
+function salut($prenom): string {
     return "Salut $prenom";
 }
