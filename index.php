@@ -1,15 +1,19 @@
 <?php 
 
 $compteur = 0;
+$i = -17627 ;
 $resultat = "<ul>";
-for($i = -17627 ; $i <= 14256 ; $i++) {
+
+while ($i <= 14256) {
     if ($i % 7 === 0) {
         $resultat .= "<li>";
         $resultat .= $i;
         $resultat .= "</li>";
         $compteur++;
     }
+    $i++;
 }
+
 $resultat .= "</ul>";
 $resultat .= "<p>Il y a $compteur resultats</p>";
 
