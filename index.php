@@ -1,20 +1,14 @@
 <?php 
 
-$compteur = 0;
-$i = -17627 ;
+$toto = 0;
 $resultat = "<ul>";
 
-while ($i <= 14256) {
-    if ($i % 7 === 0) {
-        $resultat .= "<li>";
-        $resultat .= $i;
-        $resultat .= "</li>";
-        $compteur++;
-    }
-    $i++;
-}
+do {   
+    $resultat .= "<li>";
+    $resultat .= $toto;
+    $resultat .= "</li>";
+    $toto++;
+} while ($toto < 10);
 
 $resultat .= "</ul>";
-$resultat .= "<p>Il y a $compteur resultats</p>";
-
 echo $resultat;
