@@ -1,14 +1,11 @@
 <?php 
 
-$x = 3;
-
-switch($x) {
-    case 1:
-        echo "Super, tu as fait 1";
-        break;
-    case 2:
-        echo "Super, tu as fait 2";
-        break;
-    default:
-        echo "Super, tu as fait n'importe quoi";
+$resultat = "<ul>";
+for($i = 0 ; $i <= 100 ; $i++) {
+    $resultat .= "<li>";
+    $resultat .= $i;
+    $resultat .= "</li>";
 }
+$resultat .= "<ul>";
+
+echo $resultat;
