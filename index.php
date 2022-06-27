@@ -1,3 +1,8 @@
+<?php
+
+require_once './functions/salut.php';
+
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -8,11 +13,8 @@
 </head>
 <body>
     <?php
-        function salut() {
-            echo "Salut";
-        }
-
-        salut();
+        $message = salut("Michel");
+        echo $message;
     ?>
 </body>
 </html>
