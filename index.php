@@ -1,6 +1,7 @@
 <?php
 
 require_once './functions/salut.php';
+require_once './functions/surface.php';
 
 ?>
 <!DOCTYPE html>
@@ -13,8 +14,8 @@ require_once './functions/salut.php';
 </head>
 <body>
     <?php
-        $message = salut("Michel");
-        echo $message;
+    $resultat = surface(10.22, 54.345);
+    echo $resultat;
     ?>
 </body>
 </html>
