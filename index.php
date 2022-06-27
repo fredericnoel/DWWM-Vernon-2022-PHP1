@@ -21,6 +21,7 @@ echo "<br />";
 
 // Afficher des informations sur le type de la variable et son contenu
 var_dump($jour);
+echo "<br />";
 // La fonction print_r() retour un résultat similaire, mais sans mentionner le type
 
 /*
@@ -29,7 +30,25 @@ Quelques règles :
 - toutes les variables commencent par une lettre ou '_'
 - le nom d'une variable contient, des chiffres, des underscores et c'est tout
 - le nom d'une variable ne contient pas d'espace.
+*/
 
+$jour = "mardi";
+$jourTest = $jour = "mercredi";
 
+// Passage par référence
+$a = 1;
+$b = &$a;
+$b = 2;
+echo $a;
 
+/* Les différents types de variables
+- String
+- Integer
+- Float
+- Boolean
+- NULL
+- Array
+- Object
+- Resource
+- Enumerations ou Enums
 */
