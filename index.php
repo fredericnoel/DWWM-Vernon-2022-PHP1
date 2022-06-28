@@ -17,17 +17,12 @@ define("TVATAUXNORMAL", 0.22);
 <body>
     <?php
 
-    function compter() {
-        static $x = 0;
-        echo "La valeur est $x <br />";
-        $x++;
-    }
+    $pommes = array("Golden", "Granny Smith", "Canada", "Pink Lady");
+    $tableau = array("Banane", "Kiwi", "Clémentine", "Poire", $pommes);
 
-    compter();
-    compter();
-    compter();
-    compter();
-    compter();
+    echo "<pre>";
+    var_dump($tableau);
+    echo "</pre>";
 
     ?>
 </body>
