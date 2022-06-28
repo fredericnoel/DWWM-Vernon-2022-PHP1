@@ -17,9 +17,18 @@ require_once './functions/factorielle.php';
 <body>
     <?php
 
+    // Création d'un tableau
     $tableau = array("Michel", "Banane", 12, true, 12.12);
+    
+    // Création d'un tableau vide
+    $tableau2 = array();
+    // Ajout d'une valeur à la fin du tableau
+    array_push($tableau2, "Toto", "Titi");
+    
+    // Tableau associatif
+    $tableauAssociatif = array("prenom" => "Michel", "nom" => "Dupont", "age" => 42);
 
-    var_dump($tableau);
+    var_dump($tableauAssociatif);
 
     ?>
 </body>
