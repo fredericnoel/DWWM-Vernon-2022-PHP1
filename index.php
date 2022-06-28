@@ -3,6 +3,7 @@
 require_once './functions/salut.php';
 require_once './functions/surface.php';
 require_once './functions/volume.php';
+require_once './functions/factorielle.php';
 
 ?>
 <!DOCTYPE html>
@@ -15,8 +16,10 @@ require_once './functions/volume.php';
 </head>
 <body>
     <?php
-    $resultat = surface(10.22, 54.345);
-    echo $resultat;
+
+    $testFactorielle = factorielle(12);
+    echo $testFactorielle;
+
     ?>
 </body>
 </html>
