@@ -3,6 +3,8 @@
 require_once './functions/autoLoad.php';
 autoLoad("*.php");
 
+define("TVATAUXNORMAL", 0.22);
+
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -14,8 +16,7 @@ autoLoad("*.php");
 </head>
 <body>
     <?php
-    $test = surface(10,20);
-    var_dump($test);
+    echo mb_strlen("NOËL");
     ?>
 </body>
 </html>
