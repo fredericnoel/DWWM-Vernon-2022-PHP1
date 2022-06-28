@@ -1,9 +1,7 @@
 <?php
 
-require_once './functions/salut.php';
-require_once './functions/surface.php';
-require_once './functions/volume.php';
-require_once './functions/factorielle.php';
+require_once './functions/autoLoad.php';
+autoLoad("*.php");
 
 ?>
 <!DOCTYPE html>
@@ -16,34 +14,8 @@ require_once './functions/factorielle.php';
 </head>
 <body>
     <?php
-
-    // Création d'un tableau
-    $tableau = array("Michel", "Banane", 12, true, 12.12);
-    
-    // Création d'un tableau vide
-    $tableau2 = array();
-    // Ajout d'une valeur à la fin du tableau
-    array_push($tableau2, "Toto", "Titi", $tableau);
-    
-    // Tableau associatif
-    $tableauAssociatif = array("prenom" => "Michel", "nom" => "Dupont", "age" => 42);
-
-
-    $resultat = "<ul>";
-
-    for ($i = 0 ; $i < count($tableau2) ; $i++) {
-        $resultat .= "<li>";
-        if (is_array($tableau2[$i]))
-            $resultat .= "C'est un tableau";
-        else
-            $resultat .= $tableau2[$i];
-        $resultat .= "</li>";
-    }    
-    $resultat .= "</ul>";
-    
-    echo $resultat;
-
-
+    $test = surface(10,20);
+    var_dump($test);
     ?>
 </body>
 </html>
