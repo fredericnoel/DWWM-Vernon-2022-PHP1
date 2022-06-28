@@ -16,12 +16,11 @@ define("TVATAUXNORMAL", 0.22);
 </head>
 <body>
     <?php
-
-    $pommes = array("Golden", "Granny Smith", "Canada", "Pink Lady");
-    $tableau = array("Banane", "Kiwi", "Clémentine", "Poire", $pommes);
-
-    dump($tableau);
- 
+    $texte = "C'est une belle chose d'être honnête, mais il est également important d'avoir raison.";
+    echo compterChaine($texte);
+    //dump(mb_str_split($texte));
+    //echo mb_strlen(utf8_decode($texte));
+    
     ?>
 </body>
 </html>
