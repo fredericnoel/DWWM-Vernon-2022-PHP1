@@ -2,6 +2,7 @@
 
 require_once './functions/salut.php';
 require_once './functions/surface.php';
+require_once './functions/volume.php';
 
 ?>
 <!DOCTYPE html>
