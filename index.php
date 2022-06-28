@@ -16,7 +16,18 @@ define("TVATAUXNORMAL", 0.22);
 </head>
 <body>
     <?php
-    echo mb_strlen("NOËL");
+
+    $valeur = 0;
+
+    function ajouter22(&$num) {
+        $num += 22;
+        echo "La valeur dans la fonction est de $num";
+    }
+
+    ajouter22($valeur);
+
+    echo "<br />";
+    echo $valeur;
     ?>
 </body>
 </html>
