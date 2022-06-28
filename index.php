@@ -20,10 +20,8 @@ define("TVATAUXNORMAL", 0.22);
     $pommes = array("Golden", "Granny Smith", "Canada", "Pink Lady");
     $tableau = array("Banane", "Kiwi", "Clémentine", "Poire", $pommes);
 
-    echo "<pre>";
-    var_dump($tableau);
-    echo "</pre>";
-
+    dump($tableau);
+ 
     ?>
 </body>
 </html>
