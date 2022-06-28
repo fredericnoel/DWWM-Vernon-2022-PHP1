@@ -17,8 +17,9 @@ require_once './functions/factorielle.php';
 <body>
     <?php
 
-    $testFactorielle = factorielle(12);
-    echo $testFactorielle;
+    $tableau = array("Michel", "Banane", 12, true, 12.12);
+
+    var_dump($tableau);
 
     ?>
 </body>
