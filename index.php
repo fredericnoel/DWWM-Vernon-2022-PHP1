@@ -17,17 +17,14 @@ define("TVATAUXNORMAL", 0.22);
 <body>
     <?php
 
-    $valeur = 0;
-
-    function ajouter22(&$num) {
-        $num += 22;
-        echo "La valeur dans la fonction est de $num";
+    function listerFruits(...$fruits) {
+        foreach($fruits as $value) {
+            echo "<p>Ce est un ou une $value </p>";
+        }
     }
 
-    ajouter22($valeur);
+    listerFruits("Banane", "Pomme", "Poire");
 
-    echo "<br />";
-    echo $valeur;
     ?>
 </body>
 </html>
